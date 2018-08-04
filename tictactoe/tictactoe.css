@@ -18,6 +18,17 @@ h1 {
 	background-color: springgreen;
 }
 
+.circle {
+	height: 70px;
+	width: 70px;
+	margin: 15% auto;
+}
+
+.circle:hover {
+	border: 3px solid red;
+	border-radius: 50%;
+}
+
 .top, .bottom {
 	border-top: 0;
 	border-bottom: 0;
