@@ -8,6 +8,14 @@
 	background-color: blue;
 }
 
+.sun {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background-color: rgb(255,115,0);
+	transform: translateY(380px);
+}
+
 .sun-background {
 	height: 100vh;
 	background-color: black;
