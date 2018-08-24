@@ -1,24 +1,72 @@
 .grass {
 	height: 60%;
 	background-color: green;
+	transform: translateY(280px);
 }
 
 .sky {
 	height: 40%;
 	background-color: blue;
+	transform: translateY(-100px);
+	/*
+	*/
 }
 
 .sun {
 	height: 100px;
 	width: 100px;
 	border-radius: 50%;
-	background-color: rgb(255,115,0);
+	background-color: rgb(255,115,0); /* sun's initial color */
 	transform: translateY(380px);
+	animation-name: moveSun;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: 5;
 }
 
 .sun-background {
 	height: 100vh;
 	background-color: black;
-
+	animation-name: skyColors;
+	animation-duration: 5s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: 5;
 }
 
+@keyframes moveSun {
+	0% {
+		
+	}
+
+	50% {
+		background-color: yellow;
+		transform: translate(900px, 0px);
+	}
+
+	100% {
+		background-color: red;
+		transform: translate(1780px, 380px);
+	}
+}
+
+@keyframes skyColors {
+	0% {
+		background-color: black;
+	}
+	
+	35% {
+		background-color: blue;
+	}
+
+	50% {
+		background-color: blue;
+	}
+
+	75% {
+		background-color: darkblue;
+	}
+
+	100% {
+		background-color: black;
+	}
+}
