@@ -1,0 +1,16 @@
+.grass {
+	height: 60%;
+	background-color: green;
+}
+
+.sky {
+	height: 40%;
+	background-color: blue;
+}
+
+.sun-background {
+	height: 100vh;
+	background-color: black;
+
+}
+
